@@ -168,14 +168,14 @@ public class WC15
   public static String[][] fill2DWithLetters(String str, int rows, int cols)
   {
     // TODO: Finish
-    int columIterator = 0;
+/*    int columIterator = 0;
     String [][] arr = new String[rows][cols];
     for(int r = 0; r < rows; r++)
     {
       for(int c = 0; c < cols; c++)
       {
         System.out.println(r + " " + c);
-        if((r * c  + columIterator <= str.length()))
+        if((r * c  + columIterator <=str.length()))
         {
         arr[r][c] = str.substring(r + c + columIterator, r + c + 1 + columIterator);
         }
@@ -186,6 +186,19 @@ public class WC15
       }
       columIterator += cols - 1;
     }
+    return arr;
+    */
+    String [][] arr = new String[rows][cols];
+    int letters = 0;
+    for(int r = 0; r < rows && letters >; r++)
+    {
+      for(int c = 0; c < cols; c++)
+      {
+        
+        letters++;
+      }
+    }
+    
     return arr;
   }
 
