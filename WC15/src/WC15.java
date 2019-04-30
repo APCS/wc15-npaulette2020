@@ -190,14 +190,15 @@ public class WC15
     */
     String [][] arr = new String[rows][cols];
     int letters = 0;
-    for(int r = 0; r < rows && letters >; r++)
+    for(int r = 0; r < rows && letters < str.length(); r++)
     {
       for(int c = 0; c < cols; c++)
       {
-        
+        arr[r][c] = str.substring(letters, letters + 1);
         letters++;
       }
     }
+
     
     return arr;
   }
