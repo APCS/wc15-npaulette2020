@@ -274,10 +274,10 @@ public class WC15
     int[][] arr = new int[endRow - startRow + 1][endCol - startCol + 1];
 
     int arrrow = 0;
-    for (int r = startRow; r < endRow + 1; r++)
+    for (int r = startRow; r <= endRow; r++)
     {
       int arrcol = 0;
-      for (int c = startCol; c < endCol + 1; c++)
+      for (int c = startCol; c <= endCol; c++)
       {
         arr[arrrow][arrcol] = mat[r][c];
         arrcol++;
